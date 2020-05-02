@@ -60,12 +60,3 @@ Portfolio=( "$(echo "$(dirname "$(realpath $0)")/$0")" $@ )
 }
 
 Color $@
-
-echo Verfication:
-
-	for Paint in ${!Canvis[@]}; do
-	echo -n ${Canvis[$((Cover++))]}
-	done
-
-echo -e \\nRandomized:
-echo "${Canvis[@]}" | tr -d ' ' | wc -c

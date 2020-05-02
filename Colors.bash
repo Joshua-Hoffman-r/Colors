@@ -27,7 +27,7 @@
 #
 
 
-Color () {
+Colors () {
 
 declare -Ag Canvis Color
 Portfolio=( "$(echo "$(dirname "$(realpath $0)")/$0")" $@ )
@@ -59,4 +59,4 @@ Portfolio=( "$(echo "$(dirname "$(realpath $0)")/$0")" $@ )
 
 }
 
-Color $@
+Colors $@
